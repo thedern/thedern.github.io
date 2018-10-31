@@ -64,3 +64,24 @@ body {
 
 }
 
+@media (max-width: 600px) {
+    #showcase h1 { 
+        font-size: 45px;
+    }
+    body {
+        background-color: #12475f;
+    }
+}
+
+@media (max-width: 500px) {
+    #showcase {
+        height: 350px;
+    }
+    #showcase h1 {
+        font-size: 45px;
+    }
+    body {
+        background-color: #12475f;
+    }
+}
+
