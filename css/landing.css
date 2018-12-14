@@ -1,7 +1,13 @@
+
+/* ==========================================================================
+   General
+   ========================================================================== */
+
 * {
     margin: 0;
     padding: 0;
 }
+
 
 body {
     font-family: Arial, Helvetica, sans-serif;
@@ -19,11 +25,15 @@ body {
     padding: 0 30px;
 }
 
+/* ==========================================================================
+   Heading
+   ========================================================================== */
+
+
 #showcase {
     height: 300px;
 
 }
-
 
 #showcase h1 {
     font-size: 50px;
@@ -36,10 +46,25 @@ body {
     
 }
 
+#showcase h2 {
+    position: relative;
+    animation-name: heading;
+    animation-duration: 3s;
+    /* prevents animation from moving back up the page after dropping into location */
+    animation-fill-mode: forwards;
+    
+}
+
 @keyframes heading {
     0% {top: -50px;}
     100% {top: 200px;}
 }
+
+
+/* ==========================================================================
+   Content
+   ========================================================================== */
+
 
 #content {
     position: relative;
@@ -54,15 +79,76 @@ body {
 }
 
 
-#content p {
+#content p, #homework p {
     margin-top: 20px;
     text-align: justify;
 }
 
-#content h3 {
+#content h3, #homework h3 {
     color: orange;
 
 }
+
+#homework ul li {
+    display: inline;
+}
+
+#homework ul li a
+{
+text-decoration: none;
+padding: .2em 1em;
+color: #fff;
+background-color: #036;
+}
+
+#navcontainer ul li a:hover
+{
+color: #fff;
+background-color: #369;
+}
+
+/* ==========================================================================
+   Homework
+   ========================================================================== */
+
+
+#homework {
+    position: relative;
+    animation-name: homework;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes homework {
+    0% {right: -1000px;}
+    100% {right: 0;}
+}
+
+#homework ul {
+    margin-top: 10px;
+}
+
+#homework ul li {
+    display: inline-block;
+}
+
+#homework ul li a
+{
+    text-decoration: none;
+    padding: .2em 1em;
+    color: #fff;
+    background-color: #036;
+}
+
+#homework ul li a:hover
+{
+    color: #fff;
+    background-color: #369;
+}
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
 
 @media (max-width: 600px) {
     #showcase h1 { 
