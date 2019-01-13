@@ -3,33 +3,55 @@
    General
    ========================================================================== */
 
+/* defaults for pages
 * {
     margin: 0;
     padding: 0;
-}
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  */
 
-
+html,
 body {
     font-family: Arial, Helvetica, sans-serif;
     /* background-color: #12475f; */
-    background-color: black;
-    color: #fff;
+    background-color: #fff;
+    color: #e67e22;
     line-height: 1.6em;
-    text-align: center;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    overflow-wrap: hidden;
 
-}
-
-.container {
-    max-width: 960px;
-    margin: auto;
-    padding: 0 30px;
 }
 
 /* ==========================================================================
-   Heading
+   Header
    ========================================================================== */
 
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(../img/computercode1.jpg);
+    background-size: cover;
+    background-position: center;
+    /* cover 100% of viewport */
+    height: 100vh;
+    /* allow content to slide on top of image */
+    background-attachment: fixed;
+}
 
+.hero-text {
+    margin-top: 50%;
+    /*	The element is positioned relative to its first positioned (not static) ancestor element; may need to remove margin-top if
+    nav is added */
+    position: absolute;
+    width: 100%;
+    /* center hero in middle of div*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/*
 #showcase {
     height: 300px;
 
@@ -41,7 +63,7 @@ body {
     position: relative;
     animation-name: heading;
     animation-duration: 3s;
-    /* prevents animation from moving back up the page after dropping into location */
+    //prevents animation from moving back up the page after dropping into location
     animation-fill-mode: forwards;
     
 }
@@ -50,7 +72,7 @@ body {
     position: relative;
     animation-name: heading;
     animation-duration: 3s;
-    /* prevents animation from moving back up the page after dropping into location */
+    //prevents animation from moving back up the page after dropping into location
     animation-fill-mode: forwards;
     
 }
@@ -61,9 +83,9 @@ body {
 }
 
 
-/* ==========================================================================
+==========================================================================
    Content
-   ========================================================================== */
+   ==========================================================================
 
 
 #content {
@@ -107,9 +129,9 @@ color: #fff;
 background-color: #369;
 }
 
-/* ==========================================================================
+==========================================================================
    Homework
-   ========================================================================== */
+   ==========================================================================
 
 
 #homework {
@@ -146,9 +168,9 @@ background-color: #369;
     background-color: #369;
 }
 
-/* ==========================================================================
+==========================================================================
    Media Queries
-   ========================================================================== */
+   ==========================================================================
 
 @media (max-width: 600px) {
     #showcase h1 { 
@@ -171,3 +193,4 @@ background-color: #369;
     }
 }
 
+*/
