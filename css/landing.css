@@ -51,6 +51,48 @@ header {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+
+/* ==========================================================================
+   Section Comment Block
+   ========================================================================== */
+
+#about {
+    padding: 20px 0;
+}
+
+/* ==========================================================================
+   Homework
+   ========================================================================== */
+#homework {
+    padding: 20px 0;
+    background-color: #f6f6f6;
+}
+
+.homework-photo {
+    height: 200px;
+    /* ensures photo does not run over div boundaries */
+    overflow: hidden;
+    background-color: #000;
+    border: solid 1px #000;
+}
+
+.homework-photo img {
+    opacity: 0.7;
+    /* scale is 115% */
+    transform: scale(1.15);
+    /* animate the scale and opacity */
+    transition: transform 0.5s, opacity 0.5s;
+    
+  }
+
+  .homework-photo img:hover {
+    /* brings image back to 100% */
+    opacity: 1;
+    -webkit-transform: scale(1.03);
+    transform: scale(1.03);
+  }
+
 /*
 #showcase {
     height: 300px;
