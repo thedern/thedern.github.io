@@ -54,11 +54,16 @@ header {
 
 
 /* ==========================================================================
-   Section Comment Block
+   About Me
    ========================================================================== */
 
 #about {
     padding: 20px 0;
+}
+
+#about p img {
+    float: left;
+    margin: 10px;
 }
 
 /* ==========================================================================
@@ -92,147 +97,3 @@ header {
     -webkit-transform: scale(1.03);
     transform: scale(1.03);
   }
-
-/*
-#showcase {
-    height: 300px;
-
-}
-
-#showcase h1 {
-    font-size: 50px;
-    line-height: 1.3em;
-    position: relative;
-    animation-name: heading;
-    animation-duration: 3s;
-    //prevents animation from moving back up the page after dropping into location
-    animation-fill-mode: forwards;
-    
-}
-
-#showcase h2 {
-    position: relative;
-    animation-name: heading;
-    animation-duration: 3s;
-    //prevents animation from moving back up the page after dropping into location
-    animation-fill-mode: forwards;
-    
-}
-
-@keyframes heading {
-    0% {top: -50px;}
-    100% {top: 200px;}
-}
-
-
-==========================================================================
-   Content
-   ==========================================================================
-
-
-#content {
-    position: relative;
-    animation-name: content;
-    animation-duration: 3s;
-    animation-fill-mode: forwards;
-}
-
-@keyframes content {
-    0% {left: -1000px;}
-    100% {left: 0;}
-}
-
-
-#content p, #homework p {
-    margin-top: 20px;
-    text-align: justify;
-}
-
-#content h3, #homework h3 {
-    color: orange;
-
-}
-
-#homework ul li {
-    display: inline;
-}
-
-#homework ul li a
-{
-text-decoration: none;
-padding: .2em 1em;
-color: #fff;
-background-color: #036;
-}
-
-#navcontainer ul li a:hover
-{
-color: #fff;
-background-color: #369;
-}
-
-==========================================================================
-   Homework
-   ==========================================================================
-
-
-#homework {
-    position: relative;
-    animation-name: homework;
-    animation-duration: 3s;
-    animation-fill-mode: forwards;
-}
-
-@keyframes homework {
-    0% {right: -1000px;}
-    100% {right: 0;}
-}
-
-#homework ul {
-    margin-top: 10px;
-}
-
-#homework ul li {
-    display: inline-block;
-}
-
-#homework ul li a
-{
-    text-decoration: none;
-    padding: .2em 1em;
-    color: #fff;
-    background-color: #036;
-}
-
-#homework ul li a:hover
-{
-    color: #fff;
-    background-color: #369;
-}
-
-==========================================================================
-   Media Queries
-   ==========================================================================
-
-@media (max-width: 600px) {
-    #showcase h1 { 
-        font-size: 45px;
-    }
-    body {
-        background-color: #12475f;
-    }
-}
-
-@media (max-width: 500px) {
-    #showcase {
-        height: 350px;
-    }
-    #showcase h1 {
-        font-size: 45px;
-    }
-    body {
-        background-color: #12475f;
-    }
-}
-
-*/
