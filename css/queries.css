@@ -1,0 +1,28 @@
+@media screen and (max-width: 786px) {
+    header {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(../img/computercode1.jpg);
+        background-size: cover;
+        background-position: center;
+        /* cover 100% of viewport */
+        height: 100vh;
+        /* allow content to slide on top of image */
+        background-attachment: fixed;
+        /* REMOVE clipped edges off of sections exposing body element's color */
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        
+    }
+    #homework {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        background-color: #eee;
+        /* REMOVE clipped edges off of sections exposing body element's color */
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+       
+    }
+
+    .hero-text {
+        margin-top: 600px;
+    }
+
+}
+
