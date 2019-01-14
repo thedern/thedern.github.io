@@ -26,3 +26,9 @@
 
 }
 
+/* mobile phone */
+@media screen and (max-width: 475px) {
+    .profile-pic {
+        display: none;
+    }
+}
