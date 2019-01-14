@@ -121,3 +121,14 @@ header {
     -webkit-transform: scale(1.03);
     transform: scale(1.03);
   }
+
+  .full-label, .partial-label, .homework-link {
+      display: block;
+      color: #fff;
+      padding: 4px 4px 10px 8px; 
+  }
+
+  /* will display with small screen media query */
+  .partial-label {
+      display: none;
+  }
