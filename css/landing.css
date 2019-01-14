@@ -22,6 +22,7 @@ body {
     font-size: 20px;
     text-rendering: optimizeLegibility;
     overflow-wrap: hidden;
+    padding: 30px;
 
 }
 
@@ -40,7 +41,7 @@ header {
 }
 
 .hero-text {
-    margin-top: 50%;
+    margin-top: 45%;
     /*	The element is positioned relative to its first positioned (not static) ancestor element; may need to remove margin-top if
     nav is added */
     position: absolute;
