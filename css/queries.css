@@ -1,3 +1,5 @@
+
+/* tablet */
 @media screen and (max-width: 786px) {
     header {
         background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(../img/computercode1.jpg);
@@ -24,7 +26,21 @@
         margin-top: 600px;
     }
 
+  
+
 }
+
+@media screen and (max-width: 825px) {
+      /* swap partial and full label */
+      .full-label {
+        display: none;
+    }
+
+    .partial-label {
+        display: block;
+    }
+}
+
 
 /* mobile phone */
 @media screen and (max-width: 475px) {
