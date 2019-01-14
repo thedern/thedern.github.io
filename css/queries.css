@@ -1,5 +1,18 @@
 
 /* tablet */
+
+@media screen and (max-width: 825px) {
+    /* swap partial and full label */
+    .full-label {
+      display: none;
+  }
+
+  .partial-label {
+      display: block;
+  }
+}
+
+
 @media screen and (max-width: 786px) {
     header {
         background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(../img/computercode1.jpg);
@@ -30,21 +43,24 @@
 
 }
 
-@media screen and (max-width: 825px) {
-      /* swap partial and full label */
-      .full-label {
-        display: none;
-    }
-
-    .partial-label {
-        display: block;
-    }
-}
 
 
 /* mobile phone */
 @media screen and (max-width: 475px) {
     .profile-pic {
+        display: none;
+    }
+
+    body {
+        font-size: 75%;
+    }
+
+    .partial-h1 {
+        font-size: 3em;
+        text-align: center;
+    }
+
+    .full-h1 {
         display: none;
     }
 }
