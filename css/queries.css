@@ -7,11 +7,12 @@
       display: none;
   }
 
-  .partial-label {
+    .partial-label {
       display: block;
   }
 }
 
+/* tablet */
 
 @media screen and (max-width: 786px) {
     header {
@@ -37,14 +38,30 @@
 
 /* mobile phone */
 @media screen and (max-width: 475px) {
-    .profile-pic {
-        /* remove my picture */
-        display: none;
-    }
 
+    /* tags */
     body {
         /* reduce text size */
         font-size: 75%;
+    }
+
+    header {
+        height: 50vh;
+    }
+
+    h3 {
+        font-size: 3em;
+        text-align: center;
+    }
+
+    /* classes */
+    .hero-text {
+        margin-top: 250px;
+    }
+
+    .profile-pic {
+        /* remove my picture */
+        display: none;
     }
 
     .partial-h1 {
@@ -58,4 +75,6 @@
         /* hide the full h1 text */
         display: none;
     }
+
+    
 }
