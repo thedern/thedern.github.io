@@ -12,17 +12,23 @@
   }
   */
 
+html {
+    background-color: #fff;
+}
+
+body {
+    background-color: #e67e22;
+}
+
 html,
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #fff;
     color: #e67e22;
     line-height: 1.6em;
     font-weight: 300;
     font-size: 20px;
     text-rendering: optimizeLegibility;
     overflow-wrap: hidden;
-    padding: 30px;
 
 }
 
@@ -38,10 +44,11 @@ header {
     height: 100vh;
     /* allow content to slide on top of image */
     background-attachment: fixed;
+    clip-path: polygon(0 0, 100% 0, 100% 90vh, 0 100%);
 }
 
 .hero-text {
-    margin-top: 45%;
+    margin-top: 40%;
     /*	The element is positioned relative to its first positioned (not static) ancestor element; may need to remove margin-top if
     nav is added */
     position: absolute;
@@ -58,12 +65,15 @@ header {
    ========================================================================== */
 
 #about {
-    padding: 20px 0;
+    padding: 40px 0;
+    background-color: #666;
+    clip-path: polygon(0 0, 100% 0, 100% 90vh, 0 100%);
 }
 
 #about p {
     font-size: 110%;
     text-align: justify;
+    color: #fff;
 }
 
 #about p img {
@@ -71,14 +81,19 @@ header {
     margin-right: 15px;
 }
 
+#about h3 {
+    color: #fff;
+}
+
 /* ==========================================================================
    Homework
    ========================================================================== */
 #homework {
-    padding-top: 20px;
+    padding-top: 60px;
     padding-bottom: 60px;
     background-color: #eee;
-
+    clip-path: polygon(0 0, 100% 10vh, 100% 90vh, 0 100%);
+   
 }
 
 .homework-photo {
@@ -104,14 +119,3 @@ header {
     -webkit-transform: scale(1.03);
     transform: scale(1.03);
   }
-
-/* ==========================================================================
-   Footer
-   ========================================================================== */
-
-footer {
-    background-image: linear-gradient(rgba(248, 248, 248, 0.7), rgba(248, 248, 248, 0.7)), url(../img/computercode2.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 110px;
-}
