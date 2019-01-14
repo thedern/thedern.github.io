@@ -61,6 +61,14 @@ header {
     transform: translate(-50%, -50%);
 }
 
+.partial-h1 {
+    display: none;
+}
+
+.full-h1 {
+    display: block;
+    text-align: center;
+}
 
 /* ==========================================================================
    About Me

@@ -15,21 +15,11 @@
 
 @media screen and (max-width: 786px) {
     header {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(../img/computercode1.jpg);
-        background-size: cover;
-        background-position: center;
-        /* cover 100% of viewport */
-        height: 100vh;
-        /* allow content to slide on top of image */
-        background-attachment: fixed;
         /* REMOVE clipped edges off of sections exposing body element's color */
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
         
     }
     #homework {
-        padding-top: 60px;
-        padding-bottom: 60px;
-        background-color: #eee;
         /* REMOVE clipped edges off of sections exposing body element's color */
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
        
@@ -48,19 +38,24 @@
 /* mobile phone */
 @media screen and (max-width: 475px) {
     .profile-pic {
+        /* remove my picture */
         display: none;
     }
 
     body {
+        /* reduce text size */
         font-size: 75%;
     }
 
     .partial-h1 {
+        /* show the partial h1 text */
+        display: block;
         font-size: 3em;
         text-align: center;
     }
 
     .full-h1 {
+        /* hide the full h1 text */
         display: none;
     }
 }
