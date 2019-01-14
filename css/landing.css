@@ -29,6 +29,7 @@ body {
     font-size: 20px;
     text-rendering: optimizeLegibility;
     overflow-wrap: hidden;
+    margin: 30px;
 
 }
 
@@ -44,6 +45,7 @@ header {
     height: 100vh;
     /* allow content to slide on top of image */
     background-attachment: fixed;
+    /* clips edges off of sections exposing body element's color */
     clip-path: polygon(0 0, 100% 0, 100% 90vh, 0 100%);
 }
 
@@ -67,7 +69,6 @@ header {
 #about {
     padding: 40px 0;
     background-color: #666;
-    clip-path: polygon(0 0, 100% 0, 100% 90vh, 0 100%);
 }
 
 #about p {
@@ -92,7 +93,8 @@ header {
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: #eee;
-    clip-path: polygon(0 0, 100% 10vh, 100% 90vh, 0 100%);
+    /* clips edges off of sections exposing body element's color */
+    clip-path: polygon(0 0, 100% 10vh, 100% 100%, 0 100%);
    
 }
 
