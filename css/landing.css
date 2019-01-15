@@ -15,7 +15,7 @@
 html {
     background-color: #fff;
     font-size: 10px;
-    margin: 5rem;
+    margin: 7rem;
 }
 
 body {
@@ -27,7 +27,7 @@ body {
     color: #e67e22;
     line-height: 2.2rem;
     font-size: 2rem;
-    font-weight: 300;
+    font-weight: 400;
     text-rendering: optimizeLegibility;
     overflow-wrap: hidden;
     
@@ -94,6 +94,7 @@ header h1 {
 #about p {
     text-align: justify;
     color: #fff;
+    font-weight: 300;
 }
 
 #about p img {
@@ -167,6 +168,28 @@ header h1 {
       clip-path: polygon(0 0, 100% 0, 100% 100%, 10vh 100%);
   }
 
+
   #dev-links h5 {
       color: #666;
+  }
+
+  #tech-resources li {
+      list-style: none;
+  }
+
+  #tech-resources li a:link, a:visited {
+      text-decoration: none;
+      color: #e67e22;
+      margin: 1rem 0;
+  }
+
+  #tech-resources li a:hover {
+      background-color: #e67e22;
+      color: #fff;
+      padding: .5rem;
+      /* add a .5 second transition */
+  }
+
+  ion-icon {
+      font-size: 64px;
   }
