@@ -20,7 +20,7 @@
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
         
     }
-    #homework {
+    #homework, #dev-links {
         /* REMOVE clipped edges off of sections exposing body element's color */
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
        
