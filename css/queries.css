@@ -27,7 +27,7 @@
     }
 
     .hero-text {
-        margin-top: 600px;
+        margin-top: 60rem;
     }
 
   
@@ -51,13 +51,13 @@
     }
 
     h3 {
-        font-size: 3em;
+        font-size: 3rem;
         text-align: center;
     }
 
     /* classes */
     .hero-text {
-        margin-top: 250px;
+        margin-top: 25rem;
     }
 
     .profile-pic {
@@ -68,7 +68,7 @@
     .partial-h1 {
         /* show the partial h1 text */
         display: block;
-        font-size: 3em;
+        font-size: 3rem;
         text-align: center;
     }
 
