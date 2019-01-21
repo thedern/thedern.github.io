@@ -130,9 +130,7 @@ header h1 {
 }
 
 #main-nav li a:hover {
-    background-color: #e67e22;
-    color: #fff;
-    padding: .5rem;
+    color: #eee;
     transition: .7s;
 }
 
@@ -243,8 +241,8 @@ header h1 {
   #tech-resources li a:hover, #blogs-inspiriation li a:hover {
       background-color: #e67e22;
       color: #fff;
-      padding: .5rem;
-      transition: .7s;
+      padding: 0 .25em;
+      transition: .3s;
   }
 
   ion-icon {
