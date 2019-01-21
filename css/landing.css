@@ -86,14 +86,14 @@ header h1 {
 /* pseudo-class for h2 elements */
 .full-h1:after {
   display: block;
-  height: 2px;
+  height: .02em;
   background-color: #eee;
   /* must specify no content since using an 'after' psuedo-class */
   content: " ";
-  width: 200px;
+  width: 5em;
   margin: 0 auto;
   /* margin between the after psuedo-class and h2 */
-  margin-top: 30px;
+  margin-top: .15em;
 }
 
 /* ==========================================================================
