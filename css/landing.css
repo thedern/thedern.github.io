@@ -122,7 +122,7 @@ header h1 {
 
 }
 
-#main-nav li a:link, a:visited
+#main-nav li a
 {
     text-decoration: none;
     color: #e67e22;
@@ -133,6 +133,8 @@ header h1 {
     color: #eee;
     transition: .7s;
 }
+
+
 
 /* ==========================================================================
    About Me
@@ -238,17 +240,14 @@ header h1 {
       list-style: none;
   }
 
-  #tech-resources li a:link, a:visited, 
-  #blogs-inspiriation li a:link, a:visited
+  #tech-resources li a, #blogs-inspiriation li a
   {
       text-decoration: none;
-      color: #e67e22;
       color: #fff;
       margin: 1rem 0;
   }
 
   #tech-resources li a:hover, #blogs-inspiriation li a:hover {
-      background-color: #e67e22;
       background-color: #333;
       color: #fff;
       padding: .5rem;
