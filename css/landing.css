@@ -173,17 +173,19 @@ header h1 {
       color: #666;
   }
 
-  #tech-resources li {
+  #tech-resources li, #blogs-inspiriation li {
       list-style: none;
   }
 
-  #tech-resources li a:link, a:visited {
+  #tech-resources li a:link, a:visited, 
+  #blogs-inspiriation li a:link, a:visited
+  {
       text-decoration: none;
       color: #e67e22;
       margin: 1rem 0;
   }
 
-  #tech-resources li a:hover {
+  #tech-resources li a:hover, #tech-resources li a:hover {
       background-color: #e67e22;
       color: #fff;
       padding: .5rem;
