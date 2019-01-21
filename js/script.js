@@ -42,7 +42,7 @@ $(document).ready(function() {
     $('.js--con').waypoint(function(direction) {
         $('.js--con').addClass('animated fadeIn');
     }, {
-        offset: '70%'
+        offset: '80%'
     });
 
 
