@@ -130,7 +130,7 @@ header h1 {
 }
 
 #main-nav li a:hover {
-    color: #fff;
+    color: #eee;
     transition: .7s;
 }
 
@@ -242,7 +242,7 @@ header h1 {
       background-color: #e67e22;
       color: #fff;
       padding: 0 .5rem;
-      transition: .7s;
+      transition: .3s;
   }
 
   ion-icon {
