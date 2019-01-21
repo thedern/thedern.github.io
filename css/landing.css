@@ -133,11 +133,10 @@ header h1 {
 }
 
 /* ==========================================================================
-   About Me and Contact
+   About Me
    ========================================================================== */
 
-#about,
-#contact {
+#about {
   padding: 4rem 0;
   background-color: #666;
 }
@@ -260,6 +259,10 @@ ion-icon {
 /* ==========================================================================
     Contact
     ========================================================================== */
+#contact {
+    padding-top: 2rem;
+    background-color: #666;
+}
 
 #contact-nav h3 {
     color: #fff;
@@ -301,13 +304,14 @@ ion-icon {
 .js--about,
 .js--homework,
 .js--links,
-.js--contact {
+.js--con {
   opacity: 0;
   animation-duration: 2s;
 }
 
 .js--about.animated,
 .js--homework.animated,
-.js--links.animated .js--contact.animated {
+.js--links.animated, 
+.js--con.animated {
   opacity: 1;
 }

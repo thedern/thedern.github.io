@@ -15,25 +15,9 @@ $(document).ready(function() {
     })
 
     $('.js--scroll-to-start').click(function () {
-        $('html, body').animate({scrollTop: $('.js--contact').offset().top}, 1000);
+        $('html, body').animate({scrollTop: $('.js--con').offset().top}, 1000);
     })
 
-    // navigation scroll
-
-    $(function() {
-        $('a[href*=#]:not([href=#])').click(function() {
-            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-                var target = $(this.hash);
-                target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-                if (target.length) {
-                    $('html,body').animate({
-                        scrollTop: target.offset().top
-                    }, 1000);
-                    return false;
-                }
-            }
-        });
-    });
 
     // Animations on scroll
 
@@ -53,6 +37,12 @@ $(document).ready(function() {
         $('.js--links').addClass('animated fadeIn');
     }, {
         offset: '50%'
+    });
+
+    $('.js--con').waypoint(function(direction) {
+        $('.js--con').addClass('animated fadeIn');
+    }, {
+        offset: '70%'
     });
 
 
