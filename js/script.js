@@ -14,6 +14,10 @@ $(document).ready(function() {
         $('html, body').animate({scrollTop: $('.js--links').offset().top}, 1000);
     })
 
+    $('.js--scroll-to-start').click(function () {
+        $('html, body').animate({scrollTop: $('.js--contact').offset().top}, 1000);
+    })
+
     // navigation scroll
 
     $(function() {
