@@ -96,7 +96,7 @@ header h1 {
   }
 
 /* ==========================================================================
-   Nav and List Items
+   Nav and Contact
    ========================================================================== */
 
 #main-nav ul {
@@ -113,7 +113,7 @@ header h1 {
 }
 
 
-#main-nav li {
+#main-nav li, #contact-nav li {
     list-style: none;
     margin: 1.5rem;
     padding: .5rem;
@@ -122,28 +122,26 @@ header h1 {
 
 }
 
-#main-nav li a
+#main-nav li a, #contact-nav li a
 {
     text-decoration: none;
     color: #e67e22;
     margin: 1rem 0;
 }
 
-#main-nav li a:hover {
+#main-nav li a:hover, #contact-nav li a:hover
+{
     color: #eee;
     transition: .7s;
 }
 
-
-
 /* ==========================================================================
-   About Me
+   About Me and Contact
    ========================================================================== */
 
-#about {
+#about, #contact {
     padding: 4rem 0;
     background-color: #666;
-    display: hidden;
 }
 
 #about p {
@@ -222,8 +220,6 @@ header h1 {
       background-size: cover;
       background-position: center;
       min-height: 40rem;
-      /* clips edges off of sections exposing body element's color */
-      /*clip-path: polygon(0 0, 100% 0, 100% 100%, 10vh 100%);*/
       padding-bottom: 2em;
   }
 
@@ -240,7 +236,8 @@ header h1 {
       list-style: none;
   }
 
-  #tech-resources li a, #blogs-inspiriation li a
+  #tech-resources li a, 
+  #blogs-inspiriation li a
   {
       text-decoration: none;
       color: #fff;
@@ -256,6 +253,32 @@ header h1 {
 
   ion-icon {
       font-size: 64px;
+      color: #333;
+  }
+
+
+  /* ==========================================================================
+    Contact
+    ========================================================================== */
+
+  #contact-nav li {
+      font-size: 1em;
+      margin-left: 0px;
+  }
+
+  #contact-nav li:first-child:hover {
+        color: #fff;
+        transition: .7s;
+  }
+
+
+  #contact-nav li:first-child, #contact-nav li:nth-child(2), #contact-nav li:nth-child(3) {
+      margin-right: 6em;
+  }
+
+  #contact-nav ion-icon {
+      font-size: 16px;
+      color: #e67e22;
   }
 
   /* ==========================================================================
@@ -264,13 +287,15 @@ header h1 {
 
 .js--about,
 .js--homework,
-.js--links {
+.js--links,
+.js--contact {
   opacity: 0;
   animation-duration: 2s;
 }
 
 .js--about.animated,
 .js--homework.animated,
-.js--links.animated {
+.js--links.animated
+.js--contact.animated {
   opacity: 1;
 }
