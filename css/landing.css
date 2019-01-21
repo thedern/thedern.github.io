@@ -96,7 +96,7 @@ header h1 {
   }
 
 /* ==========================================================================
-   Nav
+   Nav and List Items
    ========================================================================== */
 
 #main-nav ul {
@@ -111,11 +111,14 @@ header h1 {
     transform: translate(-50%, -50%);
     text-align: center;
 }
+
+
 #main-nav li {
     list-style: none;
-    display: inline-block;
-    margin: 1rem;
+    margin: 1.5rem;
+    padding: .5rem;
     font-size: 1.5em;
+    display: inline-block;
 
 }
 
@@ -130,7 +133,7 @@ header h1 {
     background-color: #e67e22;
     color: #fff;
     padding: .5rem;
-    transition: .5s;
+    transition: .7s;
 }
 
 /* ==========================================================================
@@ -140,6 +143,7 @@ header h1 {
 #about {
     padding: 4rem 0;
     background-color: #666;
+    display: hidden;
 }
 
 #about p {
@@ -240,9 +244,26 @@ header h1 {
       background-color: #e67e22;
       color: #fff;
       padding: .5rem;
-      transition: .5s;
+      transition: .7s;
   }
 
   ion-icon {
       font-size: 64px;
   }
+
+  /* ==========================================================================
+   Animations
+   ========================================================================== */
+
+.js--about,
+.js--homework,
+.js--links {
+  opacity: 0;
+  animation-duration: 2s;
+}
+
+.js--about.animated,
+.js--homework.animated,
+.js--links.animated {
+  opacity: 1;
+}
