@@ -82,6 +82,57 @@ header h1 {
     text-align: center;
 }
 
+/* pseudo-class for h2 elements */
+.full-h1:after {
+    display: block;
+    height: 2px;
+    background-color: #eee;;
+    /* must specify no content since using an 'after' psuedo-class */
+    content: " ";
+    width: 200px;
+    margin: 0 auto;
+    /* margin between the after psuedo-class and h2 */
+    margin-top: 30px;
+  }
+
+/* ==========================================================================
+   Nav
+   ========================================================================== */
+
+#main-nav ul {
+    margin-top: 50%;
+    /*	The element is positioned relative to its first positioned (not static) ancestor element; may need to remove margin-top if
+    nav is added */
+    position: absolute;
+    width: 100%;
+    /* center hero in middle of div*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+#main-nav li {
+    list-style: none;
+    display: inline-block;
+    margin: 1rem;
+    font-size: 1.5em;
+
+}
+
+#main-nav li a:link, a:visited
+{
+    text-decoration: none;
+    color: #e67e22;
+    margin: 1rem 0;
+}
+
+#main-nav li a:hover {
+    background-color: #e67e22;
+    color: #fff;
+    padding: .5rem;
+    transition: .5s;
+}
+
 /* ==========================================================================
    About Me
    ========================================================================== */
@@ -185,11 +236,11 @@ header h1 {
       margin: 1rem 0;
   }
 
-  #tech-resources li a:hover, #tech-resources li a:hover {
+  #tech-resources li a:hover, #blogs-inspiriation li a:hover {
       background-color: #e67e22;
       color: #fff;
       padding: .5rem;
-      /* add a .5 second transition */
+      transition: .5s;
   }
 
   ion-icon {
