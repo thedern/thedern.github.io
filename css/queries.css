@@ -152,8 +152,8 @@
 }
 
 
-/* mobile phone landscape */
-
+/* mobile phone landscape
+breaks phone landscape
 @media screen and (min-width: 550px) and (max-width: 1024px){
 
     .hero-text {
@@ -162,6 +162,7 @@
 
 }
 
+*/
 
 @media screen and (max-width: 549px) {
 
