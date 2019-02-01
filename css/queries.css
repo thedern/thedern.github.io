@@ -149,11 +149,18 @@
         opacity: 1;
     }
 
-    #contact-nav li {
+    #contact-nav ul li {
         font-size: 1.75rem;
-        display: block;
         text-align: center;
+        display: block;
     }
+
+    /* to align center I needed to undo the margin from landing css */
+    #contact-nav li:first-child,
+    #contact-nav li:nth-child(2),
+    #contact-nav li:nth-child(3) {
+    margin-right: 0em;
+}       
 
 
 
