@@ -14,7 +14,7 @@
 
 /* tablet */
 
-@media screen and (max-width: 786px) {
+@media screen and (max-width: 877px) {
     header {
         /* REMOVE clipped edges off of sections exposing body element's color */
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
@@ -27,7 +27,7 @@
     }
 
     .hero-text {
-        margin-top: 60rem;
+        margin-top: 10rem;
     }
 
     html {
@@ -38,15 +38,6 @@
         /* remove my picture */
         display: none;
     }
-  
-
-}
-
-
-
-/* mobile phone landscape */
-
-@media screen and (max-width: 549px) {
 
     /**
     * General Mobile
@@ -64,10 +55,6 @@
     h3 {
         font-size: 3rem;
         text-align: center;
-    }
-
-    .hero-text {
-        margin-top: 20rem;
     }
 
     .partial-h1 {
@@ -160,12 +147,19 @@
     #contact-nav li:nth-child(2),
     #contact-nav li:nth-child(3) {
     margin-right: 0em;
-}       
-
-
-
-
-   
+    }       
 
     
 }
+
+
+/* mobile phone landscape */
+
+@media screen and (max-width: 549px) {
+
+    .hero-text {
+        margin-top: 20rem;
+    }
+
+}
+
