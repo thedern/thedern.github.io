@@ -1,7 +1,7 @@
 
 /* tablet */
 
-@media screen and (max-width: 1025px) {
+@media screen and (max-width: 1024px) {
     /* swap partial and full label */
     .full-label {
       display: none;
@@ -153,6 +153,15 @@
 
 
 /* mobile phone landscape */
+
+@media screen and (min-width: 550px) and (max-width: 1024px){
+
+    .hero-text {
+        margin-top: 25rem;
+    }
+
+}
+
 
 @media screen and (max-width: 549px) {
 
