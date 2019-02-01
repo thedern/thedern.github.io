@@ -169,6 +169,10 @@ header h1 {
   clip-path: polygon(0 0, 100% 10vh, 100% 100%, 0 100%);
 }
 
+#homework-mobile {
+  display: none;
+}
+
 .homework-photo {
   height: 20rem;
   /* ensures photo does not run over div boundaries */
@@ -201,6 +205,10 @@ header h1 {
 
 /* will display with small screen media query */
 .partial-label {
+  display: none;
+}
+
+.homework-link-mobile {
   display: none;
 }
 

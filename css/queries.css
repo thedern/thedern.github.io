@@ -30,17 +30,28 @@
         margin-top: 60rem;
     }
 
+    html {
+        margin: 0px;
+    }
+
+    .profile-pic {
+        /* remove my picture */
+        display: none;
+    }
   
 
 }
 
 
 
-/* mobile phone */
+/* mobile phone landscape */
 
-@media screen and (max-width: 475px) {
+@media screen and (max-width: 549px) {
 
-    /* tags */
+    /**
+    * General Mobile
+    */
+
     body {
         /* reduce text size */
         font-size: 75%;
@@ -55,20 +66,14 @@
         text-align: center;
     }
 
-    /* classes */
     .hero-text {
-        margin-top: 25rem;
-    }
-
-    .profile-pic {
-        /* remove my picture */
-        display: none;
+        margin-top: 20rem;
     }
 
     .partial-h1 {
         /* show the partial h1 text */
         display: block;
-        font-size: 3rem;
+        font-size: 5rem;
         text-align: center;
     }
 
@@ -76,6 +81,91 @@
         /* hide the full h1 text */
         display: none;
     }
+
+    /**
+    * Nav Mobile
+    */
+
+    #main-nav {
+        display: none;
+    }
+
+    /**
+     * About Mobile
+     */
+
+    #about {
+        font-size: 1.75rem;
+    }
+
+    /**
+     * Homework Links Mobile
+     */
+
+    #homework-full {
+        display: none;
+    }
+
+
+    #homework-mobile {
+        display: block;
+    }
+
+    #homework-mobile ul li {
+        list-style: none;
+        font-size: 2rem;
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+    #homework-mobile ul li a {
+        text-decoration: none;
+        color: #e67e22
+    }
+
+    #homework-mobile ul li a:hover {
+        background-color: #333;
+        color: #fff;
+        padding: 0.5rem;
+        transition: 0.5s;
+    }
+
+
+    /**
+     * Dev Links Mobile
+     */
+    
+    
+    #dev-links {
+        font-size: 1.75rem;
+        text-align: center;
+    }
+
+    /**
+    * Contact Mobile
+    */
+
+    .js-con {
+        opacity: 1;
+    }
+
+    #contact-nav ul li {
+        font-size: 1.75rem;
+        text-align: center;
+        display: block;
+    }
+
+    /* to align center I needed to undo the margin from landing css */
+    #contact-nav li:first-child,
+    #contact-nav li:nth-child(2),
+    #contact-nav li:nth-child(3) {
+    margin-right: 0em;
+}       
+
+
+
+
+   
 
     
 }
