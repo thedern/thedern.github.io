@@ -1,7 +1,7 @@
 
 /* tablet */
 
-@media screen and (max-width: 825px) {
+@media screen and (max-width: 1025px) {
     /* swap partial and full label */
     .full-label {
       display: none;
@@ -10,11 +10,10 @@
     .partial-label {
       display: block;
   }
-}
+/*}*/
 
-/* tablet */
 
-@media screen and (max-width: 877px) {
+/* @media screen and (max-width: 844px) {*/
     header {
         /* REMOVE clipped edges off of sections exposing body element's color */
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
